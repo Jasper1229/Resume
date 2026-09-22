@@ -1,6 +1,8 @@
 %-------------------------
 % Resume in Latex
-% Customized for Early-Career SWE / Project-Heavy Focus
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -111,26 +113,26 @@
           {\textbf{Djed - Skill Time Tracking Backend} $|$ \emph{Java, Spring Boot, PostgreSQL, Docker, Git}}{August 2026 -- Present}
           \resumeItemListStart
             \resumeItem{Architected a RESTful backend service using Spring Boot to manage persistent state across 10+ normalized PostgreSQL relational tables.}
-            \resumeItem{Integrated type-safe SQL query generation via jOOQ.}
-            \resumeItem{Implemented secure user authentication and route protection using Spring Security with stateless session management.}
+            \resumeItem{Integrated type-safe SQL query generation via jOOQ across 20+ database queries.}
+            \resumeItem{Implemented secure authentication using Spring Security with BCrypt password hashing and session-based authorization, exposing public login/registration endpoints while restricting all other API routes to authenticated users.}
           \resumeItemListEnd
 
         \resumeProjectHeading
           {\textbf{Raid: The Nether} $|$ \emph{Java, Kotlin, Gradle, Git, MongoDB, Taiga, Spigot}}{September 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Led a development team through Agile sprint cycles, utilizing Taiga to manage Kanban boards, track feature milestones, and delegate tasks.}
+            \resumeItem{Led a 3-person development team through Agile sprint cycles, utilizing Taiga to manage Kanban boards, track feature milestones, and delegate tasks.}
             \resumeItem{Architected modular, object-oriented systems for custom content generation, persisting dynamic player state using MongoDB.}
-            \resumeItem{Facilitated iterative playtesting phases, translating user feedback into actionable backlog tickets for subsequent development sprints.}
+            \resumeItem{Facilitated iterative playtesting sessions with 20+ testers, translating user feedback into actionable backlog tickets for subsequent development sprints.}
             \resumeItem{Contributed 6K+ lines of Java code, authoring comprehensive documentation for internal APIs and custom libraries.}
-            \resumeItem{Configured continuous deployment pipelines targeting a remote headless Linux VPS over SSH to automate build compilation and dynamic plugin reloads.}
+            \resumeItem{Configured continuous deployment pipelines targeting a remote headless Linux VPS over SSH to automate build compilation and dynamic plugin reloads, reducing deployment time to seconds.}
           \resumeItemListEnd
 
         \resumeProjectHeading
           {\textbf{Self-Hosted Linux Home Lab} $|$ \emph{Linux, Tailscale, Bash, SSH, Networking, systemd}}{August 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Built a dedicated multi-node Linux home lab to test deployments, remotely compile code, and run self-hosted services.}
+            \resumeItem{Built a dedicated 3-node Linux home lab to test deployments, remotely compile code, and run self-hosted services.}
             \resumeItem{Configured a secure Tailscale private network with subnet routing and SSH access for remote server administration.}
-            \resumeItem{Set up remote development and compilation workflows to offload continuous builds and long-running tasks from local machines.}
+            \resumeItem{Set up remote SSH-based development in CLion and WebStorm, using Ubuntu for compilation and package management (Node.js, etc.) to sidestep local environment/toolchain issues.}
             \resumeItem{Automated background service lifecycles across 24/7 running servers using custom systemd unit files and Bash scripts.}
           \resumeItemListEnd
 
@@ -142,16 +144,11 @@
     \resumeSubheading
       {Association for Computing Machinery (ACM)}{San Antonio, TX}
       {Member}{Aug. 2026 -- Present}
-
-    \resumeSubheading
-      {ACM Projects}{San Antonio, TX}
-      {Member}{Sept. 2026 -- Present}
-
     \resumeSubheading
       {ENGin}{Remote}
       {Volunteer English Conversation Partner}{Mar. 2024 -- 2025}
       \resumeItemListStart
-        \resumeItem{Paired weekly with a Ukrainian student to practice conversational English, supporting communication and academic goals}
+        \resumeItem{Paired weekly with a Ukrainian student to practice conversational English, supporting communication and academic goals.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
