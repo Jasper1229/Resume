@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in Latex
+% Customized for Early-Career SWE / Project-Heavy Focus
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jasper Stephens} \\ \vspace{2pt}
+    \small +1 512-364-6400 $|$ 
+    \href{mailto:jasper.stephens1@gmail.com}{\underline{jasper.stephens1@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jasper-j-s/}{\underline{linkedin.com/in/jasper-j-s}} $|$
+    \href{https://github.com/jasper1229}{\underline{github.com/jasper1229}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at San Antonio}{San Antonio, TX}
+      {Bachelor of Science in Software Engineering}{Aug. 2025 -- May 2029}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Javascript, Python, SQL (PostgreSQL), MongoDB, Bash} \\
+     \textbf{Frameworks \& Libraries}{: Spring Boot, jOOQ, React, Node.js} \\
+     \textbf{Developer Tools \& Systems}{: Linux/UNIX, Git, Docker, PostgreSQL, VS Code, IntelliJ IDEA}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Djed - Skill Time Tracking Backend} $|$ \emph{Java, Spring Boot, PostgreSQL, Docker, Git}}{August 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Architected a RESTful backend service using Spring Boot to manage persistent state across 10+ normalized PostgreSQL relational tables.}
+            \resumeItem{Integrated type-safe SQL query generation via jOOQ.}
+            \resumeItem{Implemented secure user authentication and route protection using Spring Security with stateless session management.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Raid: The Nether} $|$ \emph{Java, Kotlin, Gradle, Git, MongoDB, Taiga, Spigot}}{September 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Led a development team through Agile sprint cycles, utilizing Taiga to manage Kanban boards, track feature milestones, and delegate tasks.}
+            \resumeItem{Architected modular, object-oriented systems for custom content generation, persisting dynamic player state using MongoDB.}
+            \resumeItem{Facilitated iterative playtesting phases, translating user feedback into actionable backlog tickets for subsequent development sprints.}
+            \resumeItem{Contributed 6K+ lines of Java code, authoring comprehensive documentation for internal APIs and custom libraries.}
+            \resumeItem{Configured continuous deployment pipelines targeting a remote headless Linux VPS over SSH to automate build compilation and dynamic plugin reloads.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Self-Hosted Linux Home Lab} $|$ \emph{Linux, Tailscale, Bash, SSH, Networking, systemd}}{August 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a dedicated multi-node Linux home lab to test deployments, remotely compile code, and run self-hosted services.}
+            \resumeItem{Configured a secure Tailscale private network with subnet routing and SSH access for remote server administration.}
+            \resumeItem{Set up remote development and compilation workflows to offload continuous builds and long-running tasks from local machines.}
+            \resumeItem{Automated background service lifecycles across 24/7 running servers using custom systemd unit files and Bash scripts.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------ORGANIZATIONS & LEADERSHIP-----------
+\section{Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Association for Computing Machinery (ACM)}{San Antonio, TX}
+      {Member}{Aug. 2026 -- Present}
+
+    \resumeSubheading
+      {ACM Projects}{San Antonio, TX}
+      {Member}{Sept. 2026 -- Present}
+
+    \resumeSubheading
+      {ENGin}{Remote}
+      {Volunteer English Conversation Partner}{Mar. 2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Paired weekly with a Ukrainian student to practice conversational English, supporting communication and academic goals}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
